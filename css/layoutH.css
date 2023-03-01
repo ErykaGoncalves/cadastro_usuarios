@@ -1,0 +1,71 @@
+hgroup#informacoes {
+
+    background-color: rgb(148, 153, 175);
+    text-align: center;
+    margin-top: -10;
+    padding: 0.5;
+    box-shadow: 0px 0px 10px rgb(27, 29, 27);
+    font-size: 25;
+}
+
+hgroup#dados {
+    background-color: rgb(148, 153, 175);
+    box-shadow: 0px 0px 10px rgb(27, 29, 27);
+    padding: 50;
+
+}
+
+ul#album-fotos {
+    width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+    overflow: hidden;
+    list-style: none;
+    margin-top: 4%;
+}
+
+ul#album-fotos li {
+    float: left;
+    width: 600px;
+    height: 600px;
+    margin: 0px;
+    border: 5px solid rgb(255, 252, 252);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 3px black;
+}
+
+ul#album-fotos li span {
+    opacity: 1;
+    color: white;
+    text-shadow: 1px black;
+    background-color: rgba(102, 94, 94, 0.89);
+    font-size: 9pt;
+    line-height: 1100px;
+    padding: 5px;
+
+}
+
+ul#album-fotos li:hover span {
+    opacity: 0;
+    transition: 1s;
+}
+
+ul#album-fotos li#foto2:hover {
+    background-position: 0px 0px;
+    background-size: 600px 600px;
+
+}
+
+
+ul#album-fotos li:hover {
+    transform: scale(1.5);
+    transition-duration: 1s;
+
+}
+
+ul#album-fotos li#foto2 {
+    background: url('../imagens/foto2.jpeg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 600px 600px;
+    background-color: aliceblue;
+}

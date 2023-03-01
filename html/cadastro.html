@@ -1,0 +1,84 @@
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/body.css">
+
+    <script>
+        function cadastro() {
+            alert("CADASTRO REALIZADO");
+
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <section id="corpo">
+        <nav id="menu">
+            <ol>
+                <li><a href="http://localhost/Eryka.gs/PHP/USERS_CADASTROS/html/index.html">Home</li><br></a>
+                <li><a href="http://localhost/Eryka.gs/PHP/USERS_CADASTROS/php/usuarios.php">Usuários</li></a><br>
+                <li><a href="http://localhost/Eryka.gs/PHP/USERS_CADASTROS/html/cadastro.html">Cadastramento</li><br></a>
+            </ol>
+
+
+
+            <hgroup id="imagem">
+                <IMG SRC="../imagens/asoec.jpg">
+            </hgroup>
+
+
+        </nav>
+
+    </section>
+
+
+    <aside id="infDireita">
+        <hgroup id="informacoes">
+            <h1 style="color: rgb(0, 0, 0); left: 50%; font-size: 42;">Cadastramento</h1>
+        </hgroup>
+        <br>
+        <form method="POST" action="insere.inc.php">
+
+            <pre><h3 id = "subtitulo">Insira as informações para efetuar o cadastro.</h3>
+
+
+        <h4><hgroup id = "dados">
+    Nome:          <input type="text" size="35" maxlength="256" name="nome"> 
+    E-mail:        <input type="text" size="35" maxlength="256" name="email">
+    Endereco:      <input type="text" size="35" maxlength="256" name="endereco">
+    Numero:        <input type="text" size="1" maxlength="4" name="numero">
+    Bairro:        <input type="text" size="35" maxlength="256" name="bairro">
+    CPF:           <input type="text" size="10" maxlength="11" name="cpf">
+    Cidade:        <input type="text" size="35" maxlength="256" name="cidade">
+    Estado:        <input type="text" size="2" maxlength="2" name="estado">
+
+   
+    
+
+    Digite o nome do seu cargo:
+
+    
+
+    <textarea name="comentarios" cols="42" rows="5"></textarea>
+    
+    
+    <input type="submit" value="Cadastrar" name="enviar" onclick="cadastro()"/>
+
+    
+
+</h4></hgroup></aside>
+
+
+    </pre>
+        </form>
+
+
+</body>
+
+</html>
