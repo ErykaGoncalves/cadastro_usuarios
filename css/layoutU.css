@@ -1,39 +1,38 @@
-
-h3#subtitulo {
-    text-align: center;
-    font-size: 27;
-    transition: 1s; 
-    
-    
-}
-
-div#interface {
-    width: 900px;
-    margin: -20px auto 0px auto;
-    padding: 20px 10px 10px 10px; /*DISTANCIA DAS LETRAS DA MERGEM*/
-    background-color: rgb(227, 227, 227);
-}
-
 hgroup#informacoes {
 
-  background-color: rgb(148, 153, 175);
-  text-align: center;
-  margin-top: 5;
-  padding: 0.5;
-  box-shadow: 0px 0px 10px rgb(27, 29, 27) ; /* SOMBREAMENTO DA MARGEM*/
-  font-size: 25;
-}
-
-hgroup#dados {
     background-color: rgb(148, 153, 175);
-    box-shadow: 0px 0px 10px rgb(27, 29, 27) ; /* SOMBREAMENTO DA MARGEM*/
-    padding: 50;
-    
+    text-align: center;
+    margin-top: -10;
+    padding: 0.5;
+    box-shadow: 0px 0px 10px rgb(27, 29, 27);
+    font-size: 25;
 }
 
+#ctnr {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    position: absolute;
+    left: 9cm;
+}
 
-.ctnr{
-    width: calc(100vw - 300px) !important;
-    position: absolute !important;
-    right: 0 !important;
+#ctnr td,
+#ctnr th {
+    padding: 10px;
+}
+
+#ctnr th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(28, 41, 114);
+    color: white;
+}
+
+#ctnr tr:nth-child(even) {
+    background-color: rgba(148, 153, 175, 0.267);;
+}
+
+#ctnr tr:hover {
+    background-color: #ddd;
 }

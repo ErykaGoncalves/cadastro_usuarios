@@ -6,14 +6,9 @@
 
     <link rel="stylesheet" href="../css/layoutU.css" />
     <link rel="stylesheet" href="../css/body.css">
-
-    <hgroup id="boot">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
-        </script>
-    </hgroup>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    
+    </script>
 
 
     <script>
@@ -22,8 +17,6 @@
 
     }
     </script>
-
-
 </head>
 
 <body>
@@ -31,11 +24,13 @@
     <section id="corpo">
         <nav id="menu">
             <ol>
-                <li><a href="http://localhost/Eryka.gs/PHP/USERS_CADASTROS/html/index.html">Home</li><br></a>
-                <li><a href="http://localhost/Eryka.gs/PHP/USERS_CADASTROS/php/usuarios.php">Usuários</li></a><br>
-                <li><a href="http://localhost/Eryka.gs/PHP/USERS_CADASTROS/html/cadastro.html">Cadastramento</li><br></a>
+                <li><a href="http://localhost/Eryka.gs/PHP/USERS_CADASTROS/cadastro_usuarios/html/index.html">Home</li>
+                <br></a>
+                <li><a href="http://localhost/Eryka.gs/PHP/USERS_CADASTROS/cadastro_usuarios/php/usuarios.php">Usuários
+                </li></a><br>
+                <li><a href="http://localhost/Eryka.gs/PHP/USERS_CADASTROS/cadastro_usuarios/html/cadastro.html">Cadastramento
+                </li><br></a>
             </ol>
-
 
 
             <hgroup id="imagem">
@@ -44,9 +39,9 @@
         </nav>
     </section>
 
-    <aside id="infDireita">
+    <aside>
         <hgroup id="informacoes">
-            <h1 style="color: rgb(0, 0, 0); left: 50%; font-size: 42;">USUÁRIOS</h1>
+            <h1>Usuários</h1>
         </hgroup>
         <br>
         </h4>
@@ -72,7 +67,7 @@ $sql = "SELECT * FROM cadastro";
 
 
   
-    print "<table class='table table-responsive ctnr table-striped table-dark  table-hover'>";
+    print "<table id='ctnr'>";
         print "<thead>";
                 print "<tr>";
                     print "<th scope='col'>".'Nome'; 
@@ -82,8 +77,8 @@ $sql = "SELECT * FROM cadastro";
                     print "<th scope='col'>".'Endereço';
                     print "<th scope='col'>".'Número';
                     print "<th scope='col'>".'Cidade';
-                    print "<th scope='col'>".'Opções';
-                    print "<th scope='col'>".'';
+                    
+                    
                 print "</tr>";
             print "</thead>";
     while ($row = $res->fetch_object()) {
@@ -96,13 +91,8 @@ $sql = "SELECT * FROM cadastro";
             print "<td >".$row->endereco;
             print "<td >".$row->numero;
             print "<td >".$row->cidade;
-            print "<td>
-                        <button onclick=\"location.href='?page=editar&id=".$row->nome."';\" class='btn btn-success'>Editar</button>
-                        <button onclick=\"location.href='?page='delete()'&id=".$row->nome."';\". class='btn btn-danger'>Excluir</button>
-                  </td>";
-            print "<td>
-                       
-                  </td>";
+            
+           
         print "</tr>";
     }
     print "</table>";
