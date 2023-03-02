@@ -28,7 +28,7 @@
                 <br></a>
                 <li><a href="http://localhost/Eryka.gs/PHP/USERS_CADASTROS/cadastro_usuarios/php/usuarios.php">Usuários
                 </li></a><br>
-                <li><a href="http://localhost/Eryka.gs/PHP/USERS_CADASTROS/cadastro_usuarios/html/cadastro.html">Cadastramento
+                <li><a href="http://localhost/Eryka.gs/PHP/USERS_CADASTROS/cadastro_usuarios/phtml/cadastro.html">Cadastramento
                 </li><br></a>
             </ol>
 
@@ -53,7 +53,7 @@
 
 
     <?php 
-    include 'conecta_mysql.inc.php'; // caminho do seu arquivo de conexão ao banco de dados //
+    include('../phtml/conecta_mysql.inc.php'); // caminho do seu arquivo de conexão ao banco de dados //
     $sql = "SELECT * FROM cadastro"; 
 
    //resultado

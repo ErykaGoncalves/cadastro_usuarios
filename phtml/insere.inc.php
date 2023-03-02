@@ -15,7 +15,7 @@ $comentarios    = $_POST["comentarios"];
 
 
 $sql = "INSERT INTO cadastro VALUES";
-$sql .= "('$nome', '$email', '$cpf', '$estado', '$endereco','$numero', '$bairro','$cidade' ,'$comentarios')";
+$sql .= "('$nome', '$email','$endereco', '$numero', '$bairro', '$cpf', '$cidade' , '$estado', '$comentarios')";
 
 if ($conexao->query($sql) === TRUE) {
 	$cadastro;
