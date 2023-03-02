@@ -53,8 +53,8 @@
 
 
     <?php 
-include 'conecta_mysql.inc.php'; // caminho do seu arquivo de conexão ao banco de dados //
-$sql = "SELECT * FROM cadastro"; 
+    include 'conecta_mysql.inc.php'; // caminho do seu arquivo de conexão ao banco de dados //
+    $sql = "SELECT * FROM cadastro"; 
 
    //resultado
    $res = $conexao->query($sql);
@@ -101,13 +101,7 @@ $sql = "SELECT * FROM cadastro";
 }
 
 
-
-
-
 ?>
-
-
-
 
 
 </body>

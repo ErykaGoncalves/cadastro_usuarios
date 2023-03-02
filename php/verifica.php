@@ -50,7 +50,7 @@ if (empty($comentarios)) {
 
 //Verifica se não houve erro - neste caso chama a include para inserir os dados
 if ($erro == 0) {
-	include 'insere.inc.php';
+	include 'cadastro.html';
 }
 
 
