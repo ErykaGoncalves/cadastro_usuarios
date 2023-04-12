@@ -1,0 +1,226 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'FonteLogo';
+    src: url();
+}
+
+/*BACKGROUND DO FUNDO*/
+body {
+    background-image: url("imagens/background.html.jpg");
+    color: rgb(0, 0, 0);
+    font-size: larger;
+    
+}
+
+/*BACKGROUND DE DENTRO*/
+div#interface {
+    width: 900px;
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgb(6, 56, 6) ; /* SOMBREAMENTO DA MARGEM*/
+    padding: 10px 10px 10px 10px; /*DISTANCIA DAS LETRAS DA MERGEM*/
+    background-color: rgb(227, 227, 227);
+}
+
+/*TAMANHO DO PARAGRAFO*/
+p {
+    text-align: justify;
+    text-indent: 50px ;
+}
+
+/*--------------------CONFIGURAÇÃO CABECALHO-------------------*/
+
+
+
+header#cabecalho img#imagem {
+    position: relative;
+    left: 200px;
+    top: 5px ;
+    }
+
+    /*colocar a imagem redonda*/
+    img    {  
+        border-radius: 10%;
+        }
+
+    /*LINHA QUE SEPARA OS TITULOS*/
+header#cabecalho {
+border-bottom: 1px green solid;
+
+}
+ /*FONTES DAS LETRAS DO CABECALHO*/
+header#cabecalho h1 {
+    font-family: 'Bungee' , sans-serif;
+    text-shadow: 5px 5px 20px rgb(0, 0, 0); 
+}
+
+
+
+/*------------FORMATAÇÃO DE IMG COM LEGENDAS------------------*/
+
+figure {
+    position: relative;
+   /*border: 8px solid brown;*/ /*COLOCA BORDA*/
+   /* box-shadow: 1px 1px 20px black;*/ /*SOBREAMENTO NO FUNDO A IMG*/
+   text-shadow: 5px 5px 20px rgb(0, 0, 0); 
+   
+}
+figure img{
+    width: 50%;
+    height: 100%;
+    
+}
+
+figure figcaption {
+    opacity: 0; /*ESCONDE O TEXTO DA FIGCAPTION*/
+    position: absolute;
+    top: 0px;
+    /*background-color: rgba(150, 24, 24, 0.4); /*COR DA TELA QUE MOSTRA NO FUNDO*/
+    width: 90%;
+    height: 0%;
+    padding: 15%;
+    left: 7%;
+    box-sizing: border-box;
+    transition: opacity 1s; /*SEGUNDO QUE DEMORA PRA TELA APAREER*/
+}
+figure:hover figcaption {
+    opacity: 1;
+}
+
+figcaption{
+    font-size: larger;
+    text-shadow: 2px 2px 2px rgb(23, 143, 228); 
+    
+    }
+
+/*-----------------FORMATAÇÃO DO MENU---------------------*/
+
+nav#menu ol {
+display: block;
+}
+
+nav#menu ol {
+    list-style: none;
+    text-transform: uppercase; /*LETRA MAIÚSCULA*/
+    position: absolute;
+    top: -20px;
+    left: 1380px;
+}
+
+nav#menu li {
+    display: inline-block; /*DEIXA EM BLOCOS*/
+    background-color: rgb(191, 190, 190);
+    padding: 5PX; /*TAMANHO DO QUADRADO */
+    margin: 2px; /*ESPAÇAMENTO ENTRE O QUADRADO*/
+    transition: background-color 1s;
+}
+
+/*cor do quadrado depois que coloca o mouse em cima*/
+nav#menu li:hover {
+    background-color: green;
+}
+
+/*cor da letra*/
+nav#menu a {
+    color: black;
+    text-decoration: none;
+}
+
+/*cor da letra depois de colocar o mouse em cima*/
+nav#menu a:hover{
+    color: white;
+}
+ /*-------------------------------------------------------------*/
+
+/*COR DO LINKDIN*/
+hgroup#link a {
+    color: rgb(11, 51, 229);
+}
+
+hgroup#link a:hover {
+    color: rgb(24, 218, 224);
+    transition: 1s;
+}
+ 
+/*--------------------CONF. SECTION/FOOTER/ASIDE------------------------*/
+ 
+section#corpo {
+    display: block;
+    width: 420px; /*largura*/
+    float: left;
+    border-right: 1px solid green ;
+    padding-right: 25px ;
+}
+
+aside#lateral {
+    display: block ;
+    width: 450px; /*largura*/
+    float: right;
+
+}
+
+footer#rodape {
+    clear: both;
+    border-top: 1px solid green;
+    
+}
+footer#rodape {
+    text-align: center;
+}
+
+/*---------------CONF. DA TABELA-----------------*/
+
+table#tabela {
+    border: 1px solid rgb(0, 0, 0);
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+table#tabela td {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+
+}
+
+table#tabela td.ce {
+color: aliceblue;
+background-color: rgb(79, 47, 47);
+
+}
+
+table#tabela td.cd {
+    color: aliceblue;
+    background-color: rgb(141, 120, 120);
+}
+
+table#tabela caption {
+    color: rgb(255, 255, 255);
+    background-color: rgb(47, 6, 6);
+    font-size: 15pt;
+    font-weight: bolder;
+}
+table#tabela caption span {
+    display: block;
+    float: right;
+    color: rgb(0, 0, 0);
+    font-size: 09pt;
+    margin-top: -12px;
+
+}
+/*---------------------COFIGURAÇÃO DE VÍDEO --------------------------*/
+video#video {
+    width: 400px;
+    height: 500;
+}
+
+/*-----------------------ARTIGO---------------------------------*/
+article#artigo h2 {
+    font-size: 12;
+    color:  rgb(47, 6, 6);
+    background-color: rgb(89, 133, 88);
+    padding: 5px 0px 5px 0px;
+    margin: 10px;
+}
+

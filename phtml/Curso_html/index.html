@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8"> <!--ESSE RESOLVE PROBLEMAS DE ACENTUAÇÃO-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tudo sobre Google Glass</title>
+
+    <link rel="stylesheet" href="Estilos.css" />
+    <link rel="stylesheet" href="fotos.css" />
+    <!--type="text/css"-->
+
+</head>
+<!--JAVA SCRIPT-->
+<script language="javascript" src="funcoes.js"></script>
+
+
+<!--ACABOU JAVA SCRIPT-->
+
+
+<body>
+    <div id="interface">
+
+        <header id="cabecalho"> <!--AONDE VAI FICAR SEU CABEÇALHO-->
+            <hgroup>
+                <h1 style="text-align: center; color: green;text-shadow: 2px 2px 2px rgb(0, 0, 0); ">MEIO AMBIENTE</h1>
+            </hgroup>
+
+            <h1 style="text-align: center; color: rgb(47, 6, 6); text-shadow: 2px 2px 2px rgb(0, 0, 0);">Saiba como
+                preservar o meio ambiente </h1>
+            <br>
+
+            <figure class="foto-legenda">
+                <img ID="imagem" src="imagens/img.html (2).png" width="300"> <br>
+                <figcaption>
+                    NÓS DEVEMOS PRESERVAR A NATUREZA
+
+                </figcaption>
+            </figure>
+
+
+
+            <!--MENU DE NAVEGAÇÃO-->
+            <nav id="menu">
+                <ol>
+                    <li onmouseover="mudaFoto('imagens/coleta.jpg')" onmouseout="mudaFoto('imagens/img.html (2).png')">
+                        <a href="http://127.0.0.1:5500/Curso_html/index.html">Home</a>
+                    </li>
+
+                    <li onmouseover="mudaFoto('imagens/efluentes.jpg')"
+                        onmouseout="mudaFoto('imagens/img.html (2).png')"><a
+                            href="http://127.0.0.1:5500/Curso_html/fotos.html">Fotos</a></li>
+
+                    <li onmouseover="mudaFoto('imagens/esgoto.jpg')" onmouseout="mudaFoto('imagens/img.html (2).png')">
+                        <a
+                            href="https://www.ergonequipamentos.com.br/implantacao-de-estacoes-de-tratamento-de-efluentes.php">efluentes</a>
+                    </li>
+
+                    <li onmouseover="mudaFoto('imagens/prevenção.jpg')"
+                        onmouseout="mudaFoto('imagens/img.html (2).png')"><a
+                            href="https://videira.ifc.edu.br/zeco/2015/11/03/20-dicas-para-preservar-o-meio-ambiente/">preservação</a>
+                    </li>
+
+                </ol>
+            </nav>
+
+
+        </header>
+
+        <section id="corpo">
+
+            <article id="artigo">
+                <h2><span style=" text-decoration: underline;"> O que é meio ambiente?</h2><br>
+                <p>O conceito de meio ambiente é bastante complexo, mas de uma maneira geral, podemos defini-lo, segundo
+                    o artigo 3º da Lei da Política Nacional do Meio Ambiente, como o “conjunto de condições, leis,
+                    influências e interações de ordem física, química e biológica que permite, abriga e rege a vida em
+                    todas as suas formas”.</p>
+
+                <p>Ou seja, trata-se do meio que condiciona e permite que a vida aconteça. No entanto, é importante
+                    lembrar que ele não é composto apenas por elementos vivos. No meio ambiente estão tanto coisas que
+                    possuem vida, como também coisas que não possuem. Os seres humanos, os animais, a flora, a água, o
+                    ar, o solo, o espaço urbano, os elementos físicos construídos pelo homem e até mesmo os elementos
+                    simbólicos (como as tradições, por exemplo) são alguns dos aspectos que o compõem.</p>
+
+                <p>Dessa forma, podemos ver que meio ambiente é um conceito bem amplo que pode ser abordado seguindo
+                    diferentes perspectivas. Aqui, vamos nos referir ao mesmo considerando, principalmente, o seu
+                    aspecto físico, constituído pelos recursos naturais, como a fauna, a flora, água, solo e ar.</p>
+
+                <p>Problemas relacionados ao meio ambiente
+                    Em decorrência às constantes intervenções humanas, o meio ambiente vem sofrendo danos cada vez mais
+                    prejudiciais. Como consequências desses danos muitos problemas ambientais estão surgindo, como:</p>
+                <br>
+
+
+                - Poluição;<br>
+                - Queimadas;<br>
+                - Desmatamentos;<br>
+                - Efeito Estufa;<br>
+                - Extinção de espécies;<br>
+                - Aquecimento Global;<br>
+                - Mudanças climáticas;<br>
+                - Chuva ácida;<br>
+                - Degradação do solo.<br>
+            </article>
+        </section>
+
+        <aside id="lateral"> <!--O QUE FICARÁ DO LADO DIREITO-->
+
+            <!--CRIANDO A TABELA -->
+            <article id="artigo">
+                <h2><span style="text-decoration: underline;"> Especificações Técnicas</span></h2>
+                <table id="tabela">
+            </article>
+            <caption> Tabela Técnica do Google Glass <span>Mar/2022</span> </caption>
+
+            <tr>
+                <td class="ce">Tela</td>
+                <td class="cd">Resolução equivalente a tela de 25" </td>
+            </tr>
+            <tr>
+                <td class="ce" rowspan="2">Camera</td>
+                <td class="cd">5MP para fotos</td>
+            </tr>
+            <tr>
+                <td class="cd">720p para vídeos</td>
+            </tr>
+            <tr>
+                <td class="ce" rowspan="2">Conectividade</td>
+                <td class="cd">Wi-fi</td>
+            </tr>
+            <tr>
+                <td class="cd">Bluetooth</td>
+            </tr>
+            <tr>
+                <td class="ce">Memória Interna</td>
+                <td class="cd"> 12GB </td>
+            </tr>
+
+            </table>
+
+            <!--AQUI EM BAIXO VAI FICAR UM VÍDEO-->
+            <p>A seguir veremos um vídeo sobre o meio ambiente:</p>
+
+            <iframe width="430" height="350" src="https://www.youtube.com/embed/IfJ1z6ahgzk"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+        </aside>
+
+        <!--CRIAÇÃO DE LINK ABAIXO COM O RODAPÉ-->
+
+        <footer id="rodape">
+
+            <hgroup id="link">
+                2022 - by Eryka Gonçalves de Souza <br>
+
+                <a href="https://www.linkedin.com/in/eryka-gon%C3%A7alves-4ab6ba227/" target="_blank">linkdIn |</a>
+                <a href="https://www.instagram.com/eryka_gs/" target="_blank">Instagram</a>
+            </hgroup>
+        </footer>
+
+
+    </div>
+</body>
+
+</html>

@@ -5,7 +5,7 @@
     src: url();
 }
 
-*{
+* {
     text-decoration: none;
 }
 
@@ -16,10 +16,10 @@ body {
     font-size: larger;
 }
 
-h1{
-   color: rgb(0, 0, 0); 
-   left: 50%; 
-   font-size: 42;
+h1 {
+    color: rgb(0, 0, 0);
+    left: 50%;
+    font-size: 42;
 }
 
 #corpo {
@@ -28,22 +28,25 @@ h1{
     float: left;
     border-right: 1px solid rgb(0, 0, 0);
     padding-right: 25px;
-    background-color: rgb(28, 41, 114);
+    background-color: rgb(86, 16, 185);
     box-shadow: 0px 0px 10px rgb(27, 29, 27);
     text-decoration: none;
-   
+    border-radius: 10px;
     
 }
 
+
 #informacoes {
 
-    background-color: rgb(148, 153, 175);
-    text-align: center;
-    margin-top: 5;
+    background: rgb(2, 0, 36);
+    border-radius: 10px;
+    background: rgb(86, 16, 185);
+    background: linear-gradient(90deg, rgba(86, 16, 185) 50%, rgba(139,14,200,1) 100%);    text-align: center;
+    margin-top: -10;
     padding: 0.5;
-    box-shadow: 0px 0px 10px rgb(27, 29, 27) ; 
+    box-shadow: 0px 0px 10px rgb(27, 29, 27);
     font-size: 25;
-  }
+}
 
 #subtitulo {
     text-align: center;
@@ -66,7 +69,7 @@ h1{
 
 #menu ol {
     display: block;
-    
+
 }
 
 #menu ol {
@@ -84,20 +87,14 @@ h1{
     width: 300px;
     transition: background-color 1s;
     text-align: center;
+    border-radius: 10px;
 }
 
-#menu {
-    color: rgb(250, 250, 250);
-   
+a {
+    color: #070707;
+
 }
 
 #menu a:hover {
-    color: white;
+    color: #2e08a0;
 }
-
-#menu li:hover {
-    background-color: rgb(125, 130, 150);
-    color: aliceblue;
-}
-
-

@@ -11,11 +11,11 @@ $bairro         = $_POST["bairro"];
 $cpf            = $_POST["cpf"];
 $cidade         = $_POST["cidade"];
 $estado         = $_POST["estado"];
-$comentarios    = $_POST["comentarios"];
+$competencias   = $_POST["competencias"];
 
 
 $sql = "INSERT INTO cadastro VALUES";
-$sql .= "('$nome', '$email','$endereco', '$numero', '$bairro', '$cpf', '$cidade' , '$estado', '$comentarios')";
+$sql .= "('$nome', '$email','$endereco', '$numero', '$bairro', '$cpf', '$cidade' , '$estado', '$competencias')";
 
 if ($conexao->query($sql) === TRUE) {
 	$cadastro;

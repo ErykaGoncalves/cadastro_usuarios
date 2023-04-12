@@ -1,0 +1,176 @@
+@charset "UTF-08";
+@font-face {
+    font-family: 'FonteLogo';
+    src: url();
+}
+
+/*BACKGROUND DO FUNDO*/
+body {
+    background-image: url("imagens/background.html.jpg");
+    color: rgb(0, 0, 0);
+    font-size: larger;
+    
+}
+
+/*BACKGROUND DE DENTRO*/
+div#interface {
+    width: 900px;
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgb(6, 56, 6) ; /* SOMBREAMENTO DA MARGEM*/
+    padding: 10px 10px 10px 10px; /*DISTANCIA DAS LETRAS DA MERGEM*/
+    background-color: rgb(227, 227, 227);
+}
+
+/*TAMANHO DO PARAGRAFO*/
+p {
+    text-align: justify;
+    text-indent: 50px ;
+}
+/*--------------------CONF. FOOTER------------------------*/
+
+footer#rodape {
+    clear: both;
+    border-top: 1px solid green;
+    
+}
+footer#rodape {
+    text-align: center;
+}
+
+
+/*COR DO LINKDIN*/
+hgroup#link a {
+    color: rgb(11, 51, 229);
+}
+
+hgroup#link a:hover {
+    color: rgb(24, 218, 224);
+    transition: 1s;
+}
+/*--------------------CONFIGURAÇÃO CABECALHO-------------------*/
+
+
+
+header#cabecalho img#imagem {
+    position: relative;
+    left: 200px;
+    top: 5px ;
+    }
+
+    /*colocar a imagem redonda*/
+    img    {  
+        border-radius: 10%;
+        }
+
+    /*LINHA QUE SEPARA OS TITULOS*/
+header#cabecalho {
+border-bottom: 1px green solid;
+
+}
+ /*FONTES DAS LETRAS DO CABECALHO*/
+header#cabecalho h1 {
+    font-family: 'Bungee' , sans-serif;
+    text-shadow: 5px 5px 20px rgb(0, 0, 0); 
+}
+
+/*-----------------FORMATAÇÃO DO MENU---------------------*/
+
+nav#menu ol {
+    display: block;
+    }
+    
+    nav#menu ol {
+        list-style: none;
+        text-transform: uppercase; /*LETRA MAIÚSCULA*/
+        position: absolute;
+        top: -20px;
+        left: 1380px;
+    }
+    
+    nav#menu li {
+        display: inline-block; /*DEIXA EM BLOCOS*/
+        background-color: rgb(191, 190, 190);
+        padding: 5PX; /*TAMANHO DO QUADRADO */
+        margin: 2px; /*ESPAÇAMENTO ENTRE O QUADRADO*/
+        transition: background-color 1s;
+    }
+    
+    /*cor do quadrado depois que coloca o mouse em cima*/
+    nav#menu li:hover {
+        background-color: green;
+    }
+    
+    /*cor da letra*/
+    nav#menu a {
+        color: black;
+        text-decoration: none;
+    }
+    
+    /*cor da letra depois de colocar o mouse em cima*/
+    nav#menu a:hover{
+        color: white;
+    }
+
+
+/*-----------CONFIGURAÇÃO DOS LOCAIS DAS IMAGENS--------------------*/
+
+ul#album-fotos {
+width: 900px;
+margin: 0 auto;
+padding: 10px;
+overflow: hidden;
+list-style: none;
+}
+
+ul#album-fotos li  {
+    float: left;
+    width: 500px;
+    height: 500px;
+    margin: 0px;
+    border: 3px solid rgb(255, 252, 252);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 3px black;
+}
+
+     /*COMO TIRAR A LEGENDA DA FOTO + CONFIGURAÇÕES*/
+
+     ul#album-fotos li span {
+        opacity: 1;
+        color: white;
+        text-shadow: 1px black;
+        background-color: rgba(102, 94, 94, 0.89);
+        font-size: 9pt;
+        line-height: 500px;
+        padding: 5px;
+      
+      }
+
+      /*QUANDO COLOCA O MOUSE EM CIMA DA TELA MOSTRA O TEXT DE SPAN*/
+      ul#album-fotos li:hover span {
+        opacity: 1;
+      }
+
+    /*QUANDO COLOCA O MOUSE EM CIMA IRÁ DAR --ZOOM*/
+
+    ul#album-fotos li#foto02:hover {
+        background-position: 0px 0px;
+        background-size: 600PX 1000px;
+        
+    }
+
+
+    ul#album-fotos li:hover{
+        transform: scale(1.5); /*TRAZER A IMAGEM PA FORA, ZOOM++*/
+        transition-duration: 1s;/*TEMPO PARA DAR ZOOM++*/
+
+    }
+
+    ul#album-fotos li#foto02 {
+        background: url('imagens/foto02.jfif') no-repeat;   
+        background-position: 50% 50%; /*vai colocar a imagem no meio do quadrado*/  
+        background-size: 600px 600px; /*tamanho da imagem de fundo*/
+        background-color: aliceblue;
+    }
+
+    
+ 

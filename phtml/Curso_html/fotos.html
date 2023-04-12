@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tudo sobre Google Glass</title>
+    <link rel = "stylesheet"    href="fotos.css"/>
+    <link rel="stylesheet" href="Estilos.css" />
+</head>
+
+<!--JAVA SCRIPT-->
+<script language = "javascript" src = "funcoes.js"></script>
+
+<body>
+                   
+    <div id = "interface"> 
+
+        <header id= "cabecalho"> <!--AONDE VAI FICAR SEU CABEÇALHO-->
+
+    <hgroup>
+        <h1 style = "text-align: center; color: green;text-shadow: 2px 2px 2px rgb(0, 0, 0); "> Como descrever à natureza? </h1>
+        </hgroup>
+                <p>O uso mais habitual do termo diz respeito ao conjunto dos seres vivos (seres humanos, animais, plantas) e aos fenómenos que ocorrem de maneira natural, isto é, sem intervenção do homem ou de meios artificiais (como a chuva ou as nevadas). Neste sentido, o planeta Terra é o lar da natureza.</p>
+                <h2 style = "text-align: center; color: rgb(66, 19, 19);text-shadow: 2px 2px 2px rgb" >Imagens da nossa equipe cuidando na nossa natureza:</h2>
+                
+                <ul id="album-fotos">
+                <li id= "foto01"><span>Equipe da Floresta</span></li>s
+                <li id= "foto02"><span>Equipe da Savana</span></li>
+                <li id= "foto03"><span>Equipe de coleta</span></li>
+                <li id= "foto04"><span>Reciclagem</span></li>
+                
+                </ul>
+
+                
+
+
+
+ <!--MENU DE NAVEGAÇÃO-->
+ <nav id = "menu">
+    <ol>
+        <li onmouseover="mudaFoto('imagens/coleta.jpg')" onmouseout="mudaFoto('imagens/img.html (2).png')"><a href="http://127.0.0.1:5500/Curso_html/index.html" >Home</a></li>
+        <li onmouseover="mudaFoto('imagens/efluentes.jpg')" onmouseout="mudaFoto('imagens/img.html (2).png')" ><a href="http://127.0.0.1:5500/Curso_html/fotos.html" >Fotos</a></li>
+        <li onmouseover="mudaFoto('imagens/esgoto.jpg')" onmouseout="mudaFoto('imagens/img.html (2).png')"><a href="https://www.ergonequipamentos.com.br/implantacao-de-estacoes-de-tratamento-de-efluentes.php" >efluentes</a></li>
+        <li onmouseover="mudaFoto('imagens/prevenção.jpg')" onmouseout="mudaFoto('imagens/img.html (2).png')"><a href="https://videira.ifc.edu.br/zeco/2015/11/03/20-dicas-para-preservar-o-meio-ambiente/" >preservação</a></li>
+            </ol>
+</nav>
+</header>
+
+*Caso deseje receber nossas revistas sobre o meio ambiente, preencha as informações abaixo*<br><br>
+<form method="#" id="fContato" action="#">
+    <fieldset id = "usuario"> 
+           <legend>Identificador do Usuário</legend>
+<p><label for = "cNome">Nome:<input type = "text" name=" tNome " id = "cNome" size="20" maxlength="30" placeholder="Nome Completo"></p>
+<p><label for = "cSenha">Senha:<input type = "password" name=" tSenha " id = "cSenha"  size="08" maxlength="08" placeholder="8 digitos"></p>
+<p><label for = "cMail">E-mail:<input type = "email" name=" tMail " id = "cMail" size="20" maxlength="40" placeholder="Digite seu e-mail"></p>
+
+<fieldset id = "sexo">
+<legend>Sexo:</legend>
+  <input type= "radio" name = "tSexo" id = "cMasc"> <label for = "cMasc">Masculino </label><br>
+  <input type= "radio" name = "tSexo" id = "cFem"><label for="cFem">Feminino</label>
+</fieldset>
+
+<p><label for="cDate">Data de Nascimento:<input type= "date" name = "tDate" id = "cDate"></label></p>
+</fieldset>
+
+<fieldset id = "endereco">
+          <legend>Endereço do Usuário</legend>
+<p><label for = "cRua">Logradouro:<input type = "text" name = "tRua" id = "cRua"></label></p>
+<p><label for = "cNumero">Numero:<input type = "number" name = "tNumero" id = "cNumero" min="0" max="04" placeholder="4 digitos"></label></p>
+
+<p><label for = "cEst">Estado:</label>
+<select name = "tEst" id = "cEst">
+    <option>
+        
+    </option>
+    <option>
+       RJ
+    </option>
+    <option>
+        SP
+    </option>
+    <option>
+        MG
+    </option>
+</select>
+
+    <p><label for = "cCity">Cidade:<input type = "text" name = tCity id = cCity maxlength="40" size="20" placeholder="Cidade"/></label></p>
+     
+    </fieldset>
+
+ <input type="submit" value = "Enviar">
+
+      </form>
+      
+ <!--CRIAÇÃO DE LINK ABAIXO COM O RODAPÉ-->
+
+ <footer id = "rodape">
+
+    <hgroup id = "link" >
+         2022 - by Eryka Gonçalves de Souza <br>
+    
+        <a  href="https://www.linkedin.com/in/eryka-gon%C3%A7alves-4ab6ba227/" target="_blank" >linkdIn |</a>
+        <a href="https://www.instagram.com/eryka_gs/" target="_blank">Instagram</a>
+            </hgroup>
+        </footer>
+    
+
+    
+    </div>
+    </body>
+    </html>
+

@@ -9,5 +9,5 @@ bairro varchar(30) not null,
 CPF varchar (11) not null,
 cidade varchar (35) not null,
 estado varchar (2) not null,
-comentários text not null
+competencias varchar (30) not null
 );

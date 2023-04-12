@@ -1,3 +1,91 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'FonteLogo';
+    src: url();
+}
+
+* {
+    text-decoration: none;
+}
+
+
+body {
+    background-image: url("../imagens/tela_fundo_home.png");
+    color: rgb(0, 0, 0);
+    font-size: larger;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    left: 50%;
+    font-size: 42;
+}
+
+#corpo {
+    display: block;
+    width: 300px;
+    float: left;
+    border-right: 1px solid rgb(0, 0, 0);
+    padding-right: 25px;
+    background-color: rgb(86, 16, 185);
+    box-shadow: 0px 0px 10px rgb(27, 29, 27);
+    text-decoration: none;
+    border-radius: 10px;
+
+
+}
+
+#subtitulo {
+    text-align: center;
+    font-size: 27;
+    transition: 1s;
+}
+
+#interface {
+    width: 900px;
+    margin: -20px auto 0px auto;
+    padding: 20px 10px 10px 10px;
+    background-color: rgb(227, 227, 227);
+}
+
+#imagem {
+    text-align: center;
+    margin-top: 750;
+
+}
+
+#menu ol {
+    display: block;
+
+}
+
+#menu ol {
+    list-style: none;
+    top: 300px;
+    left: -30;
+}
+
+#menu li {
+    background-color: rgb(253, 249, 249);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    margin: 1, 5px;
+    width: 300px;
+    transition: background-color 1s;
+    text-align: center;
+    border-radius: 10px;
+}
+
+a {
+    color: #070707;
+
+}
+
+#menu a:hover {
+    color: #2e08a0;
+}
+
 
 section, ol {
    position: fixed;
@@ -5,7 +93,10 @@ section, ol {
 
 #informacoes {
 
-    background-color: rgb(148, 153, 175);
+    background: rgb(2, 0, 36);
+    border-radius: 10px;
+    background: rgb(86, 16, 185);
+    background: linear-gradient(90deg, rgba(86, 16, 185) 50%, rgba(139,14,200,1) 100%);    text-align: center;
     text-align: center;
     margin-top: -10;
     padding: 0.5;
@@ -31,14 +122,14 @@ section, ol {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: rgb(28, 41, 114);
+    background-color: rgb(86, 16, 185);
     color: white;
 }
 
 #ctnr tr:nth-child(even) {
-    background-color: rgba(148, 153, 175, 0.267);;
+    background-color: rgba(155, 148, 175, 0.267);;
 }
 
 #ctnr tr:hover {
-    background-color: rgb(148, 153, 175);
+    background-color: rgba(30, 0, 253, 0.474);
 }

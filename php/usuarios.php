@@ -5,16 +5,10 @@
     <meta charset="UTF-8">
 
     <link rel="stylesheet" href="../css/layoutU.css" />
-    <link rel="stylesheet" href="../css/body.css">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"> -->
-    
-    </script>
-
-
+ 
     <script>
     function cadastro() {
         alert("CADASTRO REALIZADO");
-
     }
     </script>
 </head>
@@ -72,11 +66,13 @@
                 print "<tr>";
                     print "<th scope='col'>".'Nome'; 
                     print "<th scope='col'>".'E-mail';
-                    print "<th scope='col'>".'CPF';
-                    print "<th scope='col'>".'Estado';
                     print "<th scope='col'>".'Endereço';
                     print "<th scope='col'>".'Número';
+                    print "<th scope='col'>".'Bairro';
+                    print "<th scope='col'>".'CPF';
                     print "<th scope='col'>".'Cidade';
+                    print "<th scope='col'>".'Estado';
+                    print "<th scope='col'>".'Competencias';
                     
                     
                 print "</tr>";
@@ -86,11 +82,15 @@
         print "<tr>";
             print "<td >".$row->nome;
             print "<td >".$row->email;
-            print "<td >".$row->CPF;
-            print "<td >".$row->estado;
             print "<td >".$row->endereco;
             print "<td >".$row->numero;
+            print "<td >".$row->bairro;
+            print "<td >".$row->CPF;
             print "<td >".$row->cidade;
+            print "<td >".$row->estado;
+            print "<td >".$row->competencias;
+            
+            
             
            
         print "</tr>";
